@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-replicas
+spec:
+  selector:
+    matchLabels:
+      app: metrics
+      department: engineering
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: metrics
+        department: engineering
+    spec:
+      containers:
+      - name: k8s-lab
+        image: "linuxacademycontent/store-products:1.0.0"
+        env:
+        - name: "PORT"
+          value: "50001"
