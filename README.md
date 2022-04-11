@@ -5,7 +5,7 @@ kubernetes cluster.
 3- Test that you can open the web app from outside the host using the host IP address and port.
 
 # Environment
-Ubuntu VM on VMWare workstation
+Ubuntu VM on VMWare workstation 15
 # Tools
 
 minikube
